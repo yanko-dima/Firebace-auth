@@ -1,3 +1,5 @@
+import db from "./firebase";
+
 // Refs
 const refs = {
   headerContainer: document.querySelector('.js-header-container'),
@@ -97,4 +99,11 @@ function onQueueBtnClick() {
     watchedBtn.classList.remove('active-btn');
   }
   queueBtn.classList.add('active-btn');
+}
+
+// New Header JS
+
+function ucerEffect() {
+  db.collection('watchedFilms').onSpapshot();
+  db.collection('queueFilms');
 }

@@ -12,6 +12,8 @@ import { paginationTotalItems } from './js/pagination';
 import { onFooterClick } from './js/modal-footer';
 import { onContainerClick } from './js/modal-movie';
 // import { onContainerClick } from './js/my-modal';
+import {singInClick, singOutClick} from './js/login';
+import authState from './js/auth-state';
 
 export let searchBy = '';
 export let queryForTui = '';
@@ -20,6 +22,7 @@ const container = getRefs().gallery;
 const mainCard = getRefs().linkCard;
 const foterLink = getRefs().footerLink;
 
+authState();
 darkTheme();
 
 // Top movies
@@ -43,6 +46,8 @@ getRefs().homeBtn.addEventListener('click', onHomeBtnClick);
 getRefs().myLibraryBtn.addEventListener('click', onMyLybraryBtnClick);
 getRefs().watchedBtn.addEventListener('click', onWatchedBtnClick);
 getRefs().queueBtn.addEventListener('click', onQueueBtnClick);
+getRefs().loginBtn.addEventListener('click', singInClick)
+getRefs().logoutBtn.addEventListener('click', singOutClick)
 
 // Header functions
 function onLogoClick(e) {

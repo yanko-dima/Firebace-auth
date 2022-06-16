@@ -28,7 +28,7 @@ export function onContainerClick(event) {
   event.preventDefault();
   window.addEventListener('keydown', onImageClose);
 
-  apiMainMovie.getMainMovie(id).then(({title, genres, date, poster,about,populanty,vote, votes}) => {
+  apiMainMovie.getMainMovie(id).then(({title, genres, date, poster,about,populanty,vote, votes, id}) => {
   const ganreList = genres.map((ganre) => ganre.name).join(', ');
  
     currentMovie = basicLightbox.create(`
@@ -70,7 +70,7 @@ export function onContainerClick(event) {
       //let currentMovieInfo = { title, genres, date, poster, about, populanty, vote, votes };
       addToWachedFilms.push({ title, genres, date, poster, about, populanty, vote, votes });
       localStorage.setItem(ADD_TO_WATCHED_FILM, JSON.stringify(addToWachedFilms));
-
+      console.log(id)
   }));
   btnAddToQueue.addEventListener("click", (() => {   
       addToQueueFilms.push({title,genres, date, poster,about,populanty,vote, votes});
