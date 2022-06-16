@@ -1,0 +1,69 @@
+<header class="js-header header" id="home">
+  <h1 hidden>Filmoteka</h1>
+  <section
+    class="js-header-container header__container header__home-padding header__home-bg"
+  >
+
+    <!-- Dark theme component -->
+    <include src="./partials/dark-theme.html"></include>
+    <!-- Nav Bar -->
+    <nav class="nav nav__home-margin">
+      <a class="js-logo nav__logo" href="">
+        <img
+          class="nav__logo-img"
+          src="./images/film.svg"
+          alt="Logo"
+          width="24"
+          height="24"
+          aria-label="Logo"
+        />
+        <span class="nav__logo-text">Filmoteka</span>
+      </a>
+      <ul class="js-menu nav__list">
+        <li class="nav__item">
+          <a data-link="home" href="" class="nav__link current-page">Home</a>
+        </li>
+        <li class="nav__item">
+          <a data-link="library" href="" class="nav__link">My library</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Films Search Form -->
+    <form class="js-submit form" id="search-form">
+      <input
+        class="form__input"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Поиск фильмов"
+      />
+      <button class="form__button" type="submit">
+        <img
+          src="./images/search.svg"
+          alt="Search films icon"
+          width="12"
+          height="12"
+          aria-label="Search films button"
+        />
+      </button>
+    </form>
+
+    <!-- Header Library Buttons -->
+    <ul class="js-librari-list library is-hidden">
+      <li class="library__item">
+        <button
+          class="js-watched-btn library__item-btn active-btn"
+          type="button"
+        >
+          Watched
+        </button>
+      </li>
+      <li class="library__item">
+        <button class="js-queue-btn library__item-btn" type="button">
+          Queue
+        </button>
+      </li>
+    </ul>
+  </section>
+</header>

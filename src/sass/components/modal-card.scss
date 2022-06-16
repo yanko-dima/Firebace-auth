@@ -1,0 +1,79 @@
+.current-movie {
+  width: 814px;
+  height: 558px;
+
+  display: flex;
+  background-color: white;
+  padding: 40px 16px 40px 16px;
+}
+.current-movie__img {
+  height: 375px;
+}
+
+.current-movie__info {
+  margin-left: 16px;
+}
+
+.current-movie__title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.current-movie__votes {
+  margin-bottom: 8px;
+}
+.current-movie__votes-data {
+  //margin-bottom: 8px;
+  //margin-bottom: 8px;
+}
+.current-movie__popularity {
+  margin-bottom: 8px;
+}
+.current-movie__popularity-data {
+  //margin-bottom: 8px;
+}
+.current-movie__original-title {
+  margin-bottom: 8px;
+}
+.current-movie__original-title-data {
+}
+.current-movie__genre {
+  margin-bottom: 20px;
+}
+.current-movie__genre-data {
+}
+.current-movie__about-section {
+}
+.current-movie__about {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.current-movie__about-data {
+  margin-bottom: 20px;
+}
+.current-movie__btn-container {
+}
+.current-movie_btn-add-to-watched {
+  margin-left: 34px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ff6b01;
+  color: #fff;
+  border-radius: 5px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.current-movie_btn-add-to-queue {
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  justify-content: center;
+  text-transform: uppercase;
+}
